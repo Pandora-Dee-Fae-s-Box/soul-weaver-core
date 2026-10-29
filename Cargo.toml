@@ -1,0 +1,20 @@
+[package]
+name = "soul-weaver-core"
+version = "0.1.0"
+edition = "2021"
+authors = ["Pandora Dee Fae <pandora@onemoment.life>"]
+description = "Protocol semantics for Soul Weaver, the inter-instance context bridge for DEE/BOX"
+license = "MIT"
+repository = "https://github.com/Pandora-Dee-Fae-s-Box/soul-weaver-core"
+keywords = ["agent", "context-bridge", "sync", "pandora-dee", "soul-weaver"]
+rust-version = "1.80"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+thiserror = "1.0"
+ulid = { version = "1.1", features = ["serde"] }
+
+[dev-dependencies]
+tokio = { version = "1.40", features = ["rt", "macros"] }
